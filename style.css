@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    padding: 0 20px;
+    background-color: rgb(83, 83, 83);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+    color: #c1c1c1;
+    padding: 70px 0;
+    text-align: center;
+}
+
+p {
+    color: white;
+    text-align: center;
+    width: 80%;
+    margin: 0;
+}
+
+.container {
+    position: relative;
+    max-width: 1000px;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+.carousel {
+    width: 100%;
+    display: flex;
+    transition: all 0.5s;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 100%;
+}
+
+.carousel-item {
+    width: 100%;
+    border-radius: 2rem;
+}
+
+.navigation {
+    max-width: 1000px;
+    width: 100%;
+    position: absolute;
+    bottom: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+label {
+    width: 15px;
+    height: 15px;
+    margin: 0 40px;
+    background-color: white;
+    transition: all 0.3s;
+    border-radius: 50%;
+    opacity: 0.4;
+}
+
+label:hover {
+    transform: scale(2);
+    opacity: 1;
+}
+
+input[id="1"]:checked ~ label[for="1"] {
+    opacity: 1;
+}
+
+input[id="2"]:checked ~ label[for="2"] {
+    opacity: 1;
+}
+
+input[id="3"]:checked ~ label[for="3"] {
+    opacity: 1;
+}
